@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /**
  * [Table of contents]
  *   1 Base
@@ -943,10 +944,10 @@ html [class*='section-'].section-bottom-0 {
 }
 
 @media (min-width: 1200px) {
-    .bg-image-1 {
-        background: url("../images/图片1.jpg") no-repeat top right;
-        background-size: cover;
-    }
+	.bg-image-1 {
+		background: url("../images/bg-part1.jpg") no-repeat top right;
+		background-size: cover;
+	}
 }
 
 @media (min-width: 1200px) {
