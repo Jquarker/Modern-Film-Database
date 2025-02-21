@@ -947,26 +947,17 @@ html [class*='section-'].section-bottom-0 {
 }
 
 @media (min-width: 1200px) {
-<<<<<<< HEAD
     .bg-image-1 {
         background: url("../images/图片1.jpg") no-repeat top right;
         background-size: cover;
     }
-=======
-	.bg-image-1 {
-		background: url("../images/bg-part1.jpg") no-repeat top right;
-		background-size: cover;
-	}
->>>>>>> f0f8dcc3a1d850d54a69e2218a3dc4f80d88ccc0
 }
 
 @media (min-width: 1200px) {
-    .bg-image-2 {
-        background: url("../images/bg-home-2.png") no-repeat center left;
-        background-size: cover;
-        padding-bottom: 200px;
-        padding-top: 200px;
-    }
+	.bg-image-2 {
+		background: url("../images/lth-2-1-bg.png") no-repeat center left;
+		background-size: cover;
+	}
 }
 /*2-1-1 颜色*/
 .bg-2-1-color {
@@ -2096,7 +2087,7 @@ a[href*='mailto'] {
     transition: transform .5s ease;
 }
 
-/* @media (min-width: 1200px) {
+@media (min-width: 1200px) {
     .image-box:hover .image-box__static {
         transform: translateY(50px);
     }
@@ -2105,7 +2096,7 @@ a[href*='mailto'] {
         transform: translate(-15px, 0);
         transition: transform .5s ease;
     }
-} */
+}
 
 @media (min-width: 1200px) and (min-width: 1600px) {
     .image-box:hover .image-box__float {
@@ -11484,8 +11475,4 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
     position: fixed;
     width: 100%;
     height: 100%;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> f0f8dcc3a1d850d54a69e2218a3dc4f80d88ccc0
