@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /**
  * [Table of contents]
  *   1 Base
@@ -3022,7 +3023,7 @@ img {
 
 .table-custom.table-custom-primary thead th {
     color: #ffffff;
-    background: rgb(196, 238, 236);
+    background: #c4eeec;
     border: 0;
 }
 
@@ -3039,7 +3040,7 @@ img {
 }
 
 .table-custom.table-custom-bordered td {
-    border: 1px solid #cccccc;
+    border: 1px solid #cccc;
 }
 
 .table-custom.table-custom-bordered tbody>tr:first-of-type>td {
@@ -3096,7 +3097,7 @@ hr {
     display: inline-block;
     width: 60px;
     height: 2px;
-    background-color: rgb(196, 238, 236);
+    background-color: #c4eeec;
 }
 
 .divider-step {

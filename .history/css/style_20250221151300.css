@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /**
  * [Table of contents]
  *   1 Base
@@ -3096,7 +3097,7 @@ hr {
     display: inline-block;
     width: 60px;
     height: 2px;
-    background-color: rgb(196, 238, 236);
+    background-color: #c4eeec;
 }
 
 .divider-step {
