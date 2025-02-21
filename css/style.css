@@ -2053,7 +2053,7 @@ a[href*='mailto'] {
     transition: transform .5s ease;
 }
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
     .image-box:hover .image-box__static {
         transform: translateY(50px);
     }
@@ -2062,7 +2062,7 @@ a[href*='mailto'] {
         transform: translate(-15px, 0);
         transition: transform .5s ease;
     }
-}
+} */
 
 @media (min-width: 1200px) and (min-width: 1600px) {
     .image-box:hover .image-box__float {
