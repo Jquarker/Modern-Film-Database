@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /**
  * [Table of contents]
  *   1 Base
@@ -3104,7 +3105,7 @@ hr {
     width: 100%;
     margin-bottom: 10px;
 }
-
+c
 .divider-step:before {
     content: '';
     position: absolute;
