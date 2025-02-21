@@ -961,7 +961,7 @@ html [class*='section-'].section-bottom-0 {
 }
 /*2-1-1 颜色*/
 .bg-2-1-color {
-    color: #afa7a7;
+    color: #ffffff;
 }
 @media (max-width: 996px) {
 	.bg-image-2-1-size1 {
@@ -980,7 +980,12 @@ html [class*='section-'].section-bottom-0 {
 		padding-top: 90px;
 	} */
 }
-
+ .bg-image-111 {
+		background: url("../images/lth-5-bg.png") no-repeat center right;
+		background-size: cover;
+		padding-bottom: 130px;
+		padding-top: 90px;
+	} 
 .bg-image-4 {
     background: url("../images/bg-home-4.png") no-repeat center;
     background-size: cover;
