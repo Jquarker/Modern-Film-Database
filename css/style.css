@@ -890,6 +890,10 @@ html [class*='section-'].section-bottom-0 {
     }
 }
 
+
+
+
+
 /** @section Backgrounds */
 .context-dark .brand .brand-logo-dark,
 .bg-gray-700 .brand .brand-logo-dark,
@@ -957,14 +961,26 @@ html [class*='section-'].section-bottom-0 {
         padding-top: 200px;
     }
 }
-
+/*2-1-1 颜色*/
+.bg-2-1-color {
+    color: #afa7a7;
+}
+@media (max-width: 996px) {
+	.bg-image-2-1-size1 {
+		top:10em;
+		margin-bottom: 5em;
+	}
+	.bg-image-2-1-siz2 {
+		margin-bottom: 10em;
+	}
+}
 @media (min-width: 1200px) {
-    .bg-image-3 {
-        background: url("../images/bg_4.png") no-repeat center right;
-        background-size: cover;
-        padding-bottom: 130px;
-        padding-top: 90px;
-    }
+	/* .bg-image-3 {
+		background: url("../images/bg-home-3.png") no-repeat center right;
+		background-size: cover;
+		padding-bottom: 130px;
+		padding-top: 90px;
+	} */
 }
 
 .bg-image-4 {
@@ -1079,20 +1095,21 @@ html [class*='section-'].section-bottom-0 {
 }
 
 .creative-bg-2:before {
-    content: '';
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #c4eeec;
-    right: -70px;
-    height: 100%;
-    width: 10000px;
-    position: absolute;
+	content: '';
+	top: 47.5%;
+	transform: translateY(-50%);
+	background-color: #f8e4b2;
+	left: 0;
+	height: calc(100% - 120px);
+	right: 0;
+	position: absolute;
 }
+
 
 .column-bg-1,
 .column-bg-4 {
     position: relative;
-    padding-top: 60px;
+	padding-top: 0px;
     padding-bottom: 60px;
 }
 
@@ -1111,17 +1128,31 @@ html [class*='section-'].section-bottom-0 {
     position: relative;
 }
 
-.column-bg-1:before,
-.column-bg-4:before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    left: 15px;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #c4eeec;
-    z-index: 1;
+@media (max-width: 1200px) {
+	.column-bg-1:before, .column-bg-4:before {/*板块2-1 lth*/
+		content: '';
+		position: absolute;
+		height: 106%;
+		left: 15px;
+		right: 15px;
+		top: 64%;
+		transform: translateY(-50%);
+		background-color: #fbd26a;
+		z-index: 1;
+	}
+}
+@media (min-width: 1201px) {
+	.column-bg-1:before, .column-bg-4:before {/*板块2-1 lth*/
+		content: '';
+		position: absolute;
+		height: 86%;
+		left: 15px;
+		right: 15px;
+		top: 80%;
+		transform: translateY(-50%);
+		background-color: #fbd26a;
+		z-index: 1;
+	}
 }
 
 @media (min-width: 1200px) {
@@ -2004,8 +2035,8 @@ a[href*='mailto'] {
 }
 
 .image-box>* {
-    margin-left: 30px;
-    margin-top: 30px;
+    margin-left: 100px;
+    margin-top: 0px;
 }
 
 .image-box img {
