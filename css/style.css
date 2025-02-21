@@ -885,7 +885,7 @@ html [class*='section-'].section-bottom-0 {
 
 @media (min-width: 1200px) {
 	.bg-image-1 {
-		background: url("../images/bg-part1.jpg") no-repeat top right;
+		background: url("../images/bg-contacts-1.png") no-repeat top right;
 		background-size: cover;
 	}
 }
