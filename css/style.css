@@ -4469,7 +4469,7 @@ textarea.form-input {
 }
 
 .quote-classic-wrap:before {
-    content: '“';
+    content: ' ';
     font-family: "Oswald", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 36px;
     line-height: 1;
