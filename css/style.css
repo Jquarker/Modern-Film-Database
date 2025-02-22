@@ -1083,7 +1083,10 @@ html [class*='section-'].section-bottom-0 {
     background-color: #212529;
     color: #fff;
     padding: 10px;
-    /* 可根据需要调整内边距 */
+}
+
+.mask-overlay h2 {
+    color: #fff;
 }
 
 @media (min-width: 1200px) {
