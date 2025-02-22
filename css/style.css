@@ -954,16 +954,14 @@ html [class*='section-'].section-bottom-0 {
 }
 
 @media (min-width: 1200px) {
-    .bg-image-2 {
-        background: url("../images/bg-home-2.png") no-repeat center left;
-        background-size: cover;
-        padding-bottom: 200px;
-        padding-top: 200px;
-    }
+	.bg-image-2 {
+		background: url("../images/lth-2-1-bg.png") no-repeat center left;
+		background-size: cover;
+	}
 }
 /*2-1-1 颜色*/
 .bg-2-1-color {
-    color: #afa7a7;
+    color: #ffffff;
 }
 @media (max-width: 996px) {
 	.bg-image-2-1-size1 {
@@ -982,7 +980,12 @@ html [class*='section-'].section-bottom-0 {
 		padding-top: 90px;
 	} */
 }
-
+ .bg-image-111 {
+		background: url("../images/lth-5-bg-2.png") no-repeat center right;
+		background-size: cover;
+		padding-bottom: 130px;
+		padding-top: 90px;
+	} 
 .bg-image-4 {
     background: url("../images/bg-home-4.png") no-repeat center;
     background-size: cover;
@@ -1065,6 +1068,25 @@ html [class*='section-'].section-bottom-0 {
         padding-bottom: 80px;
         padding-top: 90px;
     }
+}
+
+.bg-filmpub {
+    background-image: url('../images/bg-6.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    color: #ffffff;
+}
+
+.mask-overlay {
+    background-color: #212529;
+    color: #fff;
+    padding: 10px;
+}
+
+.mask-overlay h2 {
+    color: #fff;
 }
 
 @media (min-width: 1200px) {
@@ -2084,7 +2106,7 @@ a[href*='mailto'] {
     transition: transform .5s ease;
 }
 
-/* @media (min-width: 1200px) {
+@media (min-width: 1200px) {
     .image-box:hover .image-box__static {
         transform: translateY(50px);
     }
@@ -2093,7 +2115,7 @@ a[href*='mailto'] {
         transform: translate(-15px, 0);
         transition: transform .5s ease;
     }
-} */
+}
 
 @media (min-width: 1200px) and (min-width: 1600px) {
     .image-box:hover .image-box__float {
