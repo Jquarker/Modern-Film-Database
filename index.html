@@ -12,6 +12,41 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .image-container {
+      position: relative;
+      display: inline-block;
+      width: 370px;
+      height: 510px;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .image-description {
+      position: absolute;
+      bottom: 0%; /* 初始状态，文本框隐藏在图片下方 */
+      left: 0;
+      width: 70%;
+      height: 50%; /* 设置文本框高度为图片的一半 */
+
+      color: white;
+      padding: 15px;
+      box-sizing: border-box;
+      opacity: 0; /* 初始状态隐藏文本框 */
+      transform: translateX(0); /* 初始状态，文本框位于左侧 */
+      transition: opacity 0.3s ease, transform 0.3s ease, bottom 0.3s ease;
+    }
+
+    .image-container:hover .image-description {
+      bottom: 0; /* 当鼠标悬停时，文本框从底部浮现 */
+      opacity: 1; /* 显示文本框 */
+      transform: translateX(-100%); /* 文本框从左侧浮现 */
+    }
+  </style>
 </head>
 
 <body>
@@ -339,105 +374,44 @@
        
         </div>
       </section>
-   
-      <!--Tours-->
-      <div class="bg-filmpub">
-      <section class="section section-lg bg-image-3">
-          <div class="container">
-            <div class="row justify-content-center" data-lightgallery="group">
-              <div class="col-sm-4">
-                <a class="info-box-classic" href="images/4_1.jpg" data-lightgallery="item">
-                  <img src="images/4_1.jpg" alt="" class="img-fluid" width="370" height="510"/>
-                  <div class="info-box-classic__description">
-                    <div class="heading-4">透明的上海</div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-sm-4">
-                <a class="info-box-classic" href="images/4_2.jpg" data-lightgallery="item">
-                  <img src="images/4_2.jpg" alt="" class="img-fluid" width="370" height="510"/>
-                  <div class="info-box-classic__description">
-                    <div class="heading-4">希望在人间</div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-sm-4">
-                <a class="info-box-classic" href="images/4_3.jpg" data-lightgallery="item">
-                  <img src="images/4_3.jpg" alt="" class="img-fluid" width="370" height="510"/>
-                  <div class="info-box-classic__description">
-                    <div class="heading-4">金粉霓裳</div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-      </section>
-      <section class="mask-overlay">
-          <h2>早期影片专题数据库</h2>
-          <h2>Early Film Special Database</h2>
-          <div class="row row-40 offset-lg">
-            <div class="col-x2-6 wow fadeInLeft">
-              <p>于影史长河中打捞起一帧帧历史影像意义重大，中国早期电影于光影流动之间默默陈述着政治、经济、文化、军事等多重场域的关联与互构。影片专题库数据除电影名称、出品年份、主创人员、创作历程等基本信息梳理外，对影片相关的影像资料、拷贝实物、电影剧本、图片资料、口述采访、典章记载、著述文论等重要史料进行再度考证整编，极力展拓影片的史料维度，以期为重述影史提供更为宽泛有力的实证性基础。</p>
-              <p>Picking up frames of historical images in the long river of film history is of great significance. Early Chinese films silently state the connections and constructions of multiple fields such as politics, economy, culture, and military through the flow of light and shadow. In addition to sorting out basic information such as the film name, production year, main creators, and creative process, the film thematic database also re examines and compiles important historical materials related to the film, including visual materials, physical copies, film scripts, image materials, oral interviews, legal records, and written essays, in order to expand the historical dimensions of the film and provide a broader and more powerful empirical basis for retelling film history.
-                
-              </p>
-            </div>
-            <div class="col-lg-4 wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
-              <h2><a href="#">
-                  <p class="wow fadeInLeft d-xl-block" style="color: rgb(255, 255, 255); visibility: visible; animation-name: fadeInLeft;">03. 图文资料 </p>
-                  <p class="wow fadeInLeft d-xl-block" style="color: rgb(255, 255, 255); visibility: visible; animation-name: fadeInLeft;"> Graphic and textual materials</p>
-                </a></h2>
-              <p class="offset-xl">主要包括图片、音频\视频、口述、回忆录、采访信息、著述文论等方面。</p>
-              <p class="offset-xl">This mainly includes images, audio/video, oral narration, memoirs, interview
-                information, and written essays.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    
-  </section>
 
   <!--Tours-->
   <div class="bg-filmpub">
-    <section class="section section-lg bg-image-3">
+    <section class="section section-lg">
       <div class="container">
         <div class="row justify-content-center" data-lightgallery="group">
+
           <div class="col-sm-4">
-            <a class="info-box-classic" href="images/4_1.jpg" data-lightgallery="item">
+            <a class="image-container" href="images/4_1.jpg" data-lightgallery="item">
               <img src="images/4_1.jpg" alt="" class="img-fluid" width="370" height="510" />
-              <div class="info-box-classic__description">
-                <div class="heading-4">透明的上海</div>
+              <div class="image-description" style="font-size: 0.9rem; color: white;">
+                <br><br>《透明的上海》是由陆洁1926年执导，大中华百合影片公司制作，黎明晖、王元龙等主演，片长50分钟。该剧主要讲述了姑嫂俱为一伪君子所诱，后彼此察觉，终于醒悟的故事。从影片到特刊封面都透露被移植的“欧化”风情。
               </div>
             </a>
           </div>
+
+
           <div class="col-sm-4">
-            <a class="info-box-classic" href="images/4_2.jpg" data-lightgallery="item">
+            <a class="image-container" href="images/4_2.jpg" data-lightgallery="item">
               <img src="images/4_2.jpg" alt="" class="img-fluid" width="370" height="510" />
-              <div class="info-box-classic__description">
-                <div class="heading-4">希望在人间</div>
-              </div>
             </a>
           </div>
           <div class="col-sm-4">
-            <a class="info-box-classic" href="images/4_3.jpg" data-lightgallery="item">
+            <a class="image-container" href="images/4_3.jpg" data-lightgallery="item">
               <img src="images/4_3.jpg" alt="" class="img-fluid" width="370" height="510" />
-              <div class="info-box-classic__description">
-                <div class="heading-4">金粉霓裳</div>
-              </div>
             </a>
           </div>
         </div>
       </div>
     </section>
-    <section class="mask-overlay">
+
+    <section class="mask-overlay" style="margin-bottom: -62px;">
       <h2>早期影片专题数据库</h2>
       <h2>Early Film Special Database</h2>
       <div class="row row-40 offset-lg">
         <div class="col-x2-6 wow fadeInLeft">
           <p>
-            于影史长河中打捞起一帧帧历史影像意义重大，中国早期电影于光影流动之间默默陈述着政治、经济、文化、军事等多重场域的关联与互构。影片专题库数据除电影名称、出品年份、主创人员、创作历程等基本信息梳理外，对影片相关的影像资料、拷贝实物、电影剧本、图片资料、口述采访、典章记载、著述文论等重要史料进行再度考证整编，极力展拓影片的史料维度，以期为重述影史提供更为宽泛有力的实证性基础。
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;于影史长河中打捞起一帧帧历史影像意义重大，中国早期电影于光影流动之间默默陈述着政治、经济、文化、军事等多重场域的关联与互构。影片专题库数据除电影名称、出品年份、主创人员、创作历程等基本信息梳理外，对影片相关的影像资料、拷贝实物、电影剧本、图片资料、口述采访、典章记载、著述文论等重要史料进行再度考证整编，极力展拓影片的史料维度，以期为重述影史提供更为宽泛有力的实证性基础。
           </p>
           <p>Picking up frames of historical images in the long river of film history is of great significance. Early
             Chinese films silently state the connections and constructions of multiple fields such as politics, economy,
@@ -452,6 +426,7 @@
       </div>
   </div>
   </section>
+
   <section class="section section-lg"
     style="background-image: url('images/jaja.jpg'); background-size:cover; background-position: center; position: relative; z-index: 1;">
     <div class="container">
@@ -496,31 +471,24 @@
     <div class="container">
 
       <div class="row row-30">
-        <div class="col-lg-4 col-md-6">
-          <div class="post-classic"><a class="post-classic__media" href="#"><img src="images/lth-5-l.jpg" alt=""
-                width="390px" height="294px" /></a>
-            <!-- <div class="post-classic-caption"><span>January 1, 2024</span> 
-                  <h5><a href="#">Walking to Machu Picchu, Peru</a></h5> 
-                 <p>Machu Picchu is mysterious and attractive place for all tourists visiting Peru. If you agree to take this path you need to know more information...</p> 
-                </div> -->
-          </div>
+
+        <div class="col-sm-4">
+          <a class="image-container" href="images/lth-5-l.jpg" data-lightgallery="item">
+            <img src="images/lth-5-l.jpg" alt="" class="img-fluid" width="370" height="510" />
+            <div class="image-description" style="font-size: 0.9rem; color: white;">
+              《联华画报》是中国1930年代知名电影杂志，由上海联华影业公司主办。创刊于1933年1月1日，初为周刊，每逢星期日出版，宣传该公司拍片情况、影人生活。1935年，《联华画报》由周刊改版为半月刊，篇幅随之增加，改为直版16开本。内容已注意刊登一些电影艺术家的创作经验谈、札记等。1936年随联华影业公司的结束宣告停刊。
+            </div>
+          </a>
         </div>
+
         <div class="col-lg-4 col-md-6">
           <div class="post-classic"><a class="post-classic__media" href="#"><img src="images/lth-5-m.png" alt=""
                 width="370" height="264" /></a>
-            <!-- <div class="post-classic-caption"><span>January 1, 2024</span> 
-                  <h5><a href="#">Walking to Machu Picchu, Peru</a></h5> 
-                 <p>Machu Picchu is mysterious and attractive place for all tourists visiting Peru. If you agree to take this path you need to know more information...</p> 
-                </div> -->
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="post-classic"><a class="post-classic__media" href="#"><img src="images/lth-5-r.jpg" alt=""
                 width="370" height="264" /></a>
-            <!-- <div class="post-classic-caption"><span>January 1, 2024</span> 
-                  <h5><a href="#">Walking to Machu Picchu, Peru</a></h5> 
-                 <p>Machu Picchu is mysterious and attractive place for all tourists visiting Peru. If you agree to take this path you need to know more information...</p> 
-                </div> -->
           </div>
         </div>
       </div>
