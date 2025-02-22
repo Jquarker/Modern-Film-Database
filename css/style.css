@@ -1079,6 +1079,22 @@ html [class*='section-'].section-bottom-0 {
     }
 }
 
+.bg-filmpub {
+    background-image: url('../images/bg-6.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    color: #ffffff;
+}
+
+.mask-overlay {
+    background-color: #212529;
+    color: #fff;
+    padding: 10px;
+    /* 可根据需要调整内边距 */
+}
+
 @media (min-width: 1200px) {
     .creative-bg {
         position: relative;
