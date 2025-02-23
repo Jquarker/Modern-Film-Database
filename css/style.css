@@ -1071,7 +1071,7 @@ html [class*='section-'].section-bottom-0 {
 }
 
 .bg-filmpub {
-    background-image: url('../images/bg-6.jpg');
+    background-image: url('../images/图片2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -5419,7 +5419,7 @@ html.tablet .ui-to-top {
 .rd-navbar-static .rd-nav-item>.rd-navbar-submenu-toggle {
     margin-left: 4px;
     font-family: "Material Design Icons";
-    font-size: 16px;
+    font-size: 40px;
     cursor: pointer;
 }
 
@@ -5452,7 +5452,7 @@ html.tablet .ui-to-top {
     position: relative;
     display: inline-block;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 40px;
     line-height: 1.2;
     transition: .25s;
 }
@@ -6395,7 +6395,7 @@ html.rd-navbar-fixed-linked .page {
 
 .rd-navbar-sidebar .rd-nav-item .rd-nav-link,
 .rd-navbar-sidebar .rd-nav-item>.rd-navbar-submenu-toggle {
-    font-size: 18px;
+    font-size: 40px;
 }
 
 .rd-navbar-sidebar .rd-nav-item+.rd-nav-item {
@@ -6410,7 +6410,7 @@ html.rd-navbar-fixed-linked .page {
 .rd-navbar-sidebar .rd-nav-link {
     max-width: calc(100% - 30px);
     word-break: break-all;
-    font-size: 18px;
+    font-size: 500px;
     line-height: 1.4;
     text-transform: none;
     color: #cccccc;
@@ -6496,7 +6496,7 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .rd-navbar-sidebar .rd-nav-item .rd-navbar--has-dropdown>.rd-navbar-submenu-toggle {
-    font-size: 14px;
+    font-size: 40px;
     color: #cccccc;
     margin-left: 7px;
 }
@@ -6642,7 +6642,7 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .rd-navbar-sidebar .rd-nav-item>.rd-navbar-dropdown .rd-navbar-dropdown>li>a {
-    font-size: 12px;
+    font-size: 40px;
 }
 
 @media (min-width: 1200px) {
@@ -6706,7 +6706,7 @@ html.rd-navbar-fixed-linked .page {
 .rd-navbar-classic .rd-navbar-nav .rd-nav-link {
     font-weight: 500;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 15px;
     letter-spacing: .1em;
 }
 
